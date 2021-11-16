@@ -1,0 +1,52 @@
+@import "color.scss";
+
+//Global
+* {
+    color: $global-color;
+    font-size: 1.2rem;
+}
+
+.container {
+    background-color: $container-bg-color;
+    border: 1px solid #000;
+    display: flex;
+    height: 500px;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 1em;
+    width: 50%;
+
+    .left {
+        background-color: $dark-color;
+        height: 100%;
+        width: 69%;
+        position: relative;
+    }
+
+    .right {
+        background-color: $right-lg-color;
+        height: 100%;
+        position: relative;
+        width: 29%;
+
+        .button {
+            background-color: $button-bg-color;
+            color: $dark-color;
+            border: 0;
+            border-radius: 10px;
+            cursor: pointer;
+            width: 7em;
+            height: 2.5em;
+            font-size: 1rem;
+            font-weight: bold;
+            padding: 0.5em 2em;
+
+            //this is to center content vertically
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translate(-50%, -120%);
+        }
+    }
+
+}

@@ -1,0 +1,31 @@
+{
+    "name": "scss",
+    "version": "1.0.0",
+    "description": "This is a scss demo",
+    "main": "index.html",
+    "scripts": {
+      "lite": "lite-server",
+      "scss": "node-sass -o css/ css/",
+      "start": "npm run watch:all",
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "watch:scss": "onchange 'css/*.scss' -- npm run scss",
+      "watch:all": "parallelshell 'npm run watch:scss' 'npm run lite' "
+    },
+    "author": "YZ",
+    "license": "ISC",
+    "devDependencies": {
+      "lite-server": "^2.3.0",
+      "node-sass": "^4.14.1",
+      "onchange": "^3.3.0",
+      "parallelshell": "^3.0.2"
+    },
+    "dependencies": {
+      "@npmcli/map-workspaces": "^1.0.4",
+      "bootstrap": "^4.4.1",
+      "install": "^0.13.0",
+      "jquery": "^3.4.1",
+      "npm": "^7.23.0",
+      "popper.js": "^1.12.9"
+    }
+  }
+  
